@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel ./src --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/app.js",
+    "start:dev": "nodemon --exec babel-node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,20 @@
   },
   "homepage": "https://github.com/amir-zad/refactoring-js#readme",
   "dependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "nodemon": "^2.0.3"
   }
 }
