@@ -1,4 +1,4 @@
-const invoices = [
+export const invoices = [
   {
     customer: "BigCo",
     performances: [
@@ -9,13 +9,8 @@ const invoices = [
   },
 ];
 
-const plays = {
+export const plays = {
   hamlet: { name: "Hamlet", type: "tragedy" },
   aslike: { name: "As You Like It", type: "comedy" },
   othello: { name: "Othello", type: "tragedy" },
-};
-
-export default {
-  invoices,
-  plays,
 };
