@@ -36,6 +36,6 @@ export default function statement(invoice, plays) {
     totalAmount += thisAmount;
   }
   result += `Amount owed is ${format(totalAmount / 100)}\n`;
-  result += `You earned ${volumeCredits} credits\n`;
+  result += `you earned ${volumeCredits} credits\n`;
   return result;
 }
