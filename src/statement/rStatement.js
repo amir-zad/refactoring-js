@@ -21,7 +21,7 @@ export default function statement(invoice, plays) {
         thisAmount += 300 * perf.audience;
         break;
       default:
-        throw new Error(`Unknown type: ${play.type}`);
+        throw new Error(`Unknown Type: ${play.type}`);
     }
 
     // add volume credits
