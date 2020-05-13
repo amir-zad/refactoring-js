@@ -1,6 +1,4 @@
-import data from "./data";
-
-function statement(invoice, plays) {
+export default function statement(invoice, plays) {
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `Statement for ${invoice.customer}\n`;
@@ -41,6 +39,3 @@ function statement(invoice, plays) {
   result += `You earned ${volumeCredits} credits\n`;
   return result;
 }
-
-const stmt = statement(data.invoices[0], data.plays);
-console.log(stmt);

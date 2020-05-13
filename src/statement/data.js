@@ -1,4 +1,4 @@
-module.exports.invoices = [
+const invoices = [
   {
     customer: "BigCo",
     performances: [
@@ -9,8 +9,13 @@ module.exports.invoices = [
   },
 ];
 
-module.exports.plays = {
+const plays = {
   hamlet: { name: "Hamlet", type: "tragedy" },
   aslike: { name: "As You Like It", type: "comedy" },
   othello: { name: "Othello", type: "tragedy" },
+};
+
+export default {
+  invoices,
+  plays,
 };

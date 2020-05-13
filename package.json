@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel ./src --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm rum build && jest ./dist",
     "start": "npm run build && node dist/app.js",
     "start:dev": "nodemon --exec babel-node src/app.js"
   },
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/amir-zad/refactoring-js#readme",
   "dependencies": {
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^26.0.1",
     "jest": "^26.0.1",
     "prettier": "^2.0.5"
   },
